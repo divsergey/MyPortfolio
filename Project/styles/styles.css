@@ -1,0 +1,51 @@
+body {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body { 
+    min-width: 320px;
+    padding: 0 ;
+    background-color:var(--color-white) ;
+    font-family: "Montserrat","Arial", sans-serif ;
+    font-size: 16px;
+    line-height: 32px;
+    color:var(--color-black) ;
+}
+:root {
+    --font-size-main:16px;
+    --line-height-main:32px;
+    --color-orange:#FF9900;
+    --color-grey:#CACACA;
+    --color-blue:#0000FF;
+    --color-white:#FFFFFF;
+    --color-black:#333333;
+}
+img { 
+    max-width: 100%;
+}
+a { 
+    text-decoration: none;
+}
+.visually-hidden { 
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+.container {
+    max-width: 1920px;
+    padding-right: 75px;
+    padding-left: 75px;
+    margin: 0 auto;
+}
+button {
+    cursor: pointer;
+}
