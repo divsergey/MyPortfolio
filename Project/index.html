@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preload" href="fonts/montserrat-regular.woff2" as="font" crossorigin>
+    <link rel="preload" href="fonts/montserrat-600.woff2" as="font" crossorigin>
+    <link rel="preload" href="fonts/montserrat-700.woff2" as="font" crossorigin>
+    <link rel="preload" href="fonts/montserrat-800.woff2" as="font" crossorigin>
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles/hero.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/stages.css">
+    <link rel="stylesheet" href="styles/reviews.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <title>Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/media-1024.css">
+    <link rel="stylesheet" href="styles/media-768.css">
+    <link rel="stylesheet" href="styles/media-320.css">
+    <script src="js/index.js" defer></script> 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+    <script src="js/burger.js" defer></script>
+    <script src="js/search.js" defer></script>
+    <script src="js/swiper.js" defer></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js" defer></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" defer></script>
+    <script src="js/accordion.js" defer></script>
+    <script src="js/tabs.js"></script>
+
+</head>
+<body class="no-js">  
+  <header class="header">
+    <div class="container header-container">
+      <picture class="header-picture">
+        <source media="(max-width: 767px)" type="image/webp" 
+          srcset="https://via.placeholder.com/97x31.webp?text=97x31+1x+webp 1x, 
+                  https://via.placeholder.com/194x62.webp?text=194x62+2x+webp 2x"> 
+        <source media="(max-width: 1919px)" type="image/webp" 
+          srcset="https://via.placeholder.com/150x48.webp?text=150x48+1x+webp 1x, 
+                  https://via.placeholder.com/300x96.webp?text=300x96+2x+webp 2x">
+        <source  type="image/webp" 
+          srcset="https://via.placeholder.com/224x72.webp?text=224x72+1x+webp 1x , 
+                  https://via.placeholder.com/448x144.webp?text=448x144+2x+webp 2x">
+        <source media="(max-width: 767px)" 
+          srcset="https://via.placeholder.com/97x31.png?text=97x31+1x+png 1x, 
+                  https://via.placeholder.com/194x62.png?text=194x62+2x+png 2x">
+        <source media="(max-width: 1919px)" 
+          srcset="https://via.placeholder.com/150x48.png?text=150x48+1x+png 1x, 
+                  https://via.placeholder.com/300x96.png?text=300x96+2x+png 2x">
+       <img src="https://via.placeholder.com/224x72.png?text=224x72+1x+png1x" srcset="https://via.placeholder.com/448x144.png?text=448x144+2x+png2x" alt="Евклид.Проектные системы" class="header-logo">
+      </picture>
+        <nav class="header-nav js-header-nav--close">
+          <button class="burger__button js-burger__button" type="button" aria-label= "Отрыть меню" id="js-burger">  
+              <svg class="burger_icon" >
+                  <use xlink:href="#burger_svg"  class="burger_svg " />
+                  <use xlink:href="#burger_svg-active" class="burger_svg-active" />
+                </svg>
+          </button> 
+          <ul class="header-nav-list js-header-nav-list" id="js-menu">
+            <li class="header-nav_list_item">
+              <a href="" class="header-nav_link">
+                О нас     
+               </a> 
+             </li>
+             <li class="header-nav_list_item">
+                <a href="" class="header-nav_link">
+                  Проекты
+                </a>
+              </li>
+              <li class="header-nav_list_item">
+                <a href="" class="header-nav_link">
+                  Этапы
+                </a>
+              </li>
+              <li class="header-nav_list_item">
+                <a href="" class="header-nav_link">
+                  Отзывы
+                </a>
+              </li>
+              <li class="header-nav_list_item">
+                <a href="" class="header-nav_link">
+                  Контакты
+                </a>
+              </li>
+          </ul>
+        </nav>
+        <div class="search_button-field js-search-mode--close">
+        <button class="search__button js-search__button" aria-label="Поиск на сайте" type="button">
+          <svg class="search_icon" >
+            <use xlink:href="#search" class="search_svg" />
+            <use xlink:href="#js-close" class="search_svg-active" />
+          </svg>
+        </button>
+        <form action="https://jsonplaceholder.typicode.com/posts" method="GET" class="form_search js-form_search" id="search-form">
+          <input class="form-input" type="search" placeholder="Поиск на сайте">
+          <button class="form-btn" type="submit" aria-label="Отправка формы">
+          </button>
+        </form>
+      </div> 
+     </div>
+  </header>
+
+  <main class="container">
+    <section class="section-hero">
+      <div class="swiper-container js-swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide_1">
+            <div class="hero_content">
+             <h1 class="hero_heading">
+                Проектные решения любой сложности
+              </h1>
+              <p class="hero_description">
+                Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов
+              </p>
+              <button class="hero_button" type="submit">
+                Заказать расчёт
+              </button>
+              </div>
+            </div>
+            <div class="swiper-slide slide_2"></div>
+            <div class="swiper-slide slide_3"></div>
+           </div>
+         <div class="swiper-pagination js-swiper-pagination"></div>
+        </div>
+     </section>
+
+    <section class="section-about">
+     <h2 class="about_heading">О нас</h2>
+      <p class="about_description">
+        Также как перспективное планирование создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса экспериментов, поражающих по своей масштабности и грандиозности. А также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены отталкиваться от того, что убеждённость некоторых оппонентов требует от нас анализа как самодостаточных, так и внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип  i будущего проекта предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач. Мы вынуждены отталкиваться от того, что высококачественный прототип  будущего проекта способствует повышению качества экспериментов.
+      </p>
+
+      <div class="container-project">
+        <div class="project_box_main">
+            <div class="project_box-link">
+              <p class="project_box-description">
+                Принимая во внимание показатели успешности, перспективное планирование способствует подготовке и реализации новых принципов.
+              </p>  
+              <a href="" class="project_box_details">
+                Подробнее
+              </a>
+           </div>
+         </div> 
+
+          <div class="poject_box_item"> 
+              <!-- 2 card -->
+          <div class="project_box_view">
+            <strong class="project_view_heading">Консультация с широким активом </strong>
+            <p class="project_box_view_description">А также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для как самодостаточных, так и внешне зависимых концептуальных решений
+            </p>
+          </div>
+              <!-- 3 card -->
+          <div class="project_box_team">
+            <strong class="project_team_heading">В своём стремлении повысить </strong>
+            <p class="project_box_team_description">Качество жизни, они забывают, что сплочённость команды профессионалов представляет собой интересный эксперимент проверки прогресса профессионального сообщества.</p>
+          </div>
+        </div> 
+      </div>
+    </section>
+
+    <section class="section-stages">
+        <h2 class="stages_heading">Как мы работаем</h2>
+          <div class="stages_main">
+            <ul class="stages_main_list">
+              <li class="stages_main_list_item">
+               <button class="stages_button js-stages_button stage_first" type="button" data-path="one">
+                1 шаг
+              </button>
+              </li>
+              <li class="stages_main_list_item">
+               <button class="stages_button js-stages_button stage_second" type="button" data-path="two">
+                2 шаг
+              </button>
+              </li>
+              <li class="stages_main_list_item" >
+                <button class="stages_button js-stages_button stage_third" type="button" data-path="three">
+                 3 шаг
+                </button>
+              </li>
+              <li class="stages_main_list_item">
+               <button class="stages_button js-stages_button stage_fourth" type="button" data-path="four">
+                4 шаг
+               </button>
+              </li>
+            </ul>
+          <div class="tab-content js-tab-content tab-content-active" data-target="one"> 
+            <h3 class="stages_main_heading">Проводим консультацию</h3>
+            <p class="stages_main_description">
+                Влечет за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати, стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.
+            </p>
+            <div class="stages_box-links">
+              <a href="" class="stages_links_detail">
+                Подробнее
+              </a>
+              <a href="" class="stages_links_contract">
+                Договор
+              </a>
+            </div>
+          </div>
+
+          <div class="tab-content js-tab-content" data-target="two">
+            <h3 class="stages_main_heading">Tabs control</h3>
+            <p class="stages_main_description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit id porro deleniti vitae amet, numquam, ut explicabo eos atque illo officia et impedit velit molestiae, eius perferendis laudantium ea nulla!            </p>
+            <div class="stages_box-links">
+              <a href="" class="stages_links_detail">
+                Подробнее
+              </a>
+              <a href="" class="stages_links_contract">
+                Договор
+              </a>
+            </div>
+          </div>
+
+          <div class="tab-content js-tab-content" data-target="three">
+           3
+           <div class="stages_box-links">
+            <a href="" class="stages_links_detail">
+              Подробнее
+            </a>
+            <a href="" class="stages_links_contract">
+              Договор
+            </a>
+          </div>
+          </div>
+
+          <div class="tab-content js-tab-content" data-target="four">
+            4
+            <div class="stages_box-links">
+              <a href="" class="stages_links_detail">
+                Подробнее
+              </a>
+              <a href="" class="stages_links_contract">
+                Договор
+              </a>
+            </div>
+           </div>
+
+          </div>
+     </section>
+
+     <section class="section-reviews">
+          <h2 class="reviews_heading">Часто задаваемые вопросы</h2>
+            <div class="reviews_container" >
+              <ul class="reviews_list" id="accordion">
+                <!-- 1 -->
+                <li class="reviews_list_item" >
+                  <button class="accordion__button js-accordion__button" type="button" >
+                    <span class="reviews_button_in line-1">
+                    Из чего формируется конечная стоимость проекта?
+                    </span>
+                  </button>
+                  <div class="panel">
+                    <p>Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.</p>
+                    <p>Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете. </p> 
+                  </div>
+                </li>
+                <!-- 2 -->
+                <li class="reviews_list_item">
+                  <button class="accordion__button js-accordion__button" type="button">
+                    <span class="reviews_button_in line-2">
+                    У меня есть свой проект. Сможем ли мы его доработать <span class="color_grey">/</span> реализовать?
+                  </span>
+                  </button>
+                  <div  class="panel">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facere laboriosam aliquid! Eius magnam neque ad! Sed consectetur distinctio, quia neque libero ratione ea error, expedita mollitia consequatur, dolorem autem.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto qui doloribus voluptas voluptatum repellat unde repudiandae tempora, recusandae, eaque quo, architecto distinctio suscipit iure temporibus in. Quibusdam, voluptate. Velit, itaque!
+                  </div>
+                </li>
+                <!-- 3 -->
+                <li class="reviews_list_item">
+                  <button class="accordion__button js-accordion__button" type="button">
+                   <span class="reviews_button_in line-3">
+                    Я выбираю между разными компаниями. В чём ваше отличие?
+                   </span>
+                  </button>
+                  <div  class="panel">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facere laboriosam aliquid! Eius magnam neque ad! Sed consectetur distinctio, quia neque libero ratione ea error, expedita mollitia consequatur, dolorem autem.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto qui doloribus voluptas voluptatum repellat unde repudiandae tempora, recusandae, eaque quo, architecto distinctio suscipit iure temporibus in. Quibusdam, voluptate. Velit, itaque!
+                  </div>
+                </li>
+                <!-- 4 -->
+                <li class="reviews_list_item">
+                  <button class="accordion__button js-accordion__button" type="button">
+                    <span class="reviews_button_in line-4">
+                     Могу ли я делегировать вам работу <span class="color_grey">/</span> согласование с подрядчиком <span class="color_grey">/</span> организацией?
+                    </span>
+                  </button>
+                  <div  class="panel">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facere laboriosam aliquid! Eius magnam neque ad! Sed consectetur distinctio, quia neque libero ratione ea error, expedita mollitia consequatur, dolorem autem.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto qui doloribus voluptas voluptatum repellat unde repudiandae tempora, recusandae, eaque quo, architecto distinctio suscipit iure temporibus in. Quibusdam, voluptate. Velit, itaque!
+                  </div>
+                </li>
+                <!-- 5 -->
+                <li class="reviews_list_item">
+                  <button class="accordion__button js-accordion__button" type="button">
+                   <span class="reviews_button_in line-5">
+                    Могу ли я вернуть деньги на каком-либо из этапов работ?
+                   </span>
+                  </button>
+                  <div  class="panel">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facere laboriosam aliquid! Eius magnam neque ad! Sed consectetur distinctio, quia neque libero ratione ea error, expedita mollitia consequatur, dolorem autem.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto qui doloribus voluptas voluptatum repellat unde repudiandae tempora, recusandae, eaque quo, architecto distinctio suscipit iure temporibus in. Quibusdam, voluptate. Velit, itaque!
+                  </div>
+                </li>
+               </ul>
+             </div>
+       </section>
+
+  </main>
+  <footer class="footer">
+    <div class="container_footer">
+
+      <div class="footer_contacts" >
+        <picture>
+           <source media="(max-width: 767px)" type="image/webp" 
+            srcset="https://via.placeholder.com/131x42.webp?text=131x42+1x+webp 1x, 
+                    https://via.placeholder.com/262x84.webp?text=262x84+2x+webp 2x"> 
+           <source  type="image/webp" 
+            srcset="https://via.placeholder.com/224x72.webp?text=224x72+1x+webp 1x , 
+                    https://via.placeholder.com/448x144.webp?text=448x144+2x+webp 2x ">
+          <source media="(max-width: 767px)" 
+            srcset="https://via.placeholder.com/131x42.png?text=131x42+1x+png 1x, 
+                    https://via.placeholder.com/262x84.png?text=262x84+2x+png 2x">
+        <img src="https://via.placeholder.com/224x72.png?text=224x72+1x+png1x" srcset="https://via.placeholder.com/448x144.png?text=448x144+2x+png2x" alt="Евклид.Проектные системы" class="footer-logo">
+       </picture>
+        <ul class="footer_list" >
+          <li class="footer_list_item">
+            <a href="" class="footer_list_link"> О нас</a>
+          </li>
+          <li class="footer_list_item">
+            <a href="" class="footer_list_link">Проекты</a>
+          </li>
+          <li class="footer_list_item">
+            <a href="" class="footer_list_link">Отзывы</a>
+          </li>
+           <li class="footer_list_item">
+            <a href="" class="footer_list_link">Договор оферты</a>
+          </li>
+          <li class="footer_list_item">
+            <a href="" class="footer_list_link">Договор подряда</a>
+          </li>
+          <li class="footer_list_item">
+            <a href="" class="footer_list_link">Конфиденциальность</a>
+          </li>
+          <li class="footer_list_item">
+            <a href="" class="footer_list_link">Партнёрское соглашение</a>
+          </li>
+        </ul>
+        <div class="footer_contacts_socials" >
+          <ul class="footer_socials_list">
+            <li class="footer_socials_list_item">
+              <a href="" class="footer_socials_link" aria-label="facebook">
+                <svg class="footer_socials_icon" >
+                  <use xlink:href="#fb" />
+                </svg>
+              </a>
+            </li>
+            <li class="footer_socials_list_item">
+              <a href="" class="footer_socials_link" aria-label="Vkontakte">
+                <svg class="footer_socials_icon">
+                  <use xlink:href="#vk" />
+                </svg>
+              </a>
+            </li>
+            <li class="footer_socials_list_item">
+              <a href="" class="footer_socials_link" aria-label="Instagramm">
+                <svg class="footer_socials_icon">
+                  <use xlink:href="#ig" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+<!-- 2 -->
+      <form action="https://jsonplaceholder.typicode.com/posts"  method="POST" class="footer_write-us_form">
+        <h2 class="footer_write-us_heading">Оставить заявку</h2>
+          <input type="text" placeholder="Фамилия, имя и отчество*" class="footer_write-us_input" required >
+          <input type="Email" placeholder="E-mail*"  class="footer_write-us_input"  required  >
+          <textarea  placeholder="Сообщение"  class="footer_write-us_input" ></textarea>
+            <div class="footer_write-us_box">
+              <button type="submit" class="footer_write-us_button">Отправить данные
+              </button>
+              <label class="check">
+              <input  class="visually-hidden" type="checkbox" required > 
+              <span class="check_box"></span>
+              Согласен на обработку данных
+             </label>
+            </div>
+       </form>
+    <!-- 3 -->
+    <div class="footer_description">
+      <p class="footer_description_text">
+        Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: разбавленное изрядной долей эмпатии, рациональное мышление позволяет оценить значение модели развития. Таким образом, консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании стандартных подходов. 
+      </p>
+    </div>
+ </div>
+</footer>
+
+<svg style="display:none">
+
+  <symbol  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61 61" id="fb">
+    <path class="s-icon" d="M30.917.12c-16.5 0-30 13.524-30 30.18 0 15.061 10.98 27.561 25.32 29.82V39.036h-7.62V30.3h7.62v-6.657c0-7.56 4.47-11.717 11.34-11.717 3.27 0 6.69.573 6.69.573v7.44h-3.78c-3.72 0-4.89 2.319-4.89 4.698V30.3h8.34l-1.35 8.735h-6.99V60.12a29.97 29.97 0 0018.15-10.21 30.194 30.194 0 007.17-19.61c0-16.656-13.5-30.18-30-30.18z"/>
+  </symbol>
+
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61 61" id="ig">
+    <path class="s-icon" d="M24.3411 30C24.3411 33.1714 26.9119 35.7422 30.0833 35.7422C33.2546 35.7422 35.8254 33.1714 35.8254 30C35.8254 26.8286 33.2546 24.2578 30.0833 24.2578C26.9119 24.2578 24.3411 26.8286 24.3411 30Z" />
+    <path class="s-icon" d="M16.6542 19.8403C16.9302 19.0923 17.3706 18.4153 17.9428 17.8596C18.4985 17.2874 19.1751 16.847 19.9235 16.571C20.5305 16.3352 21.4424 16.0546 23.1219 15.9781C24.9388 15.8953 25.4835 15.8774 30.0831 15.8774C34.6832 15.8774 35.2279 15.8948 37.0443 15.9777C38.7239 16.0546 39.6362 16.3352 40.2427 16.571C40.9912 16.847 41.6682 17.2874 42.2235 17.8596C42.7957 18.4153 43.2361 19.0919 43.5125 19.8403C43.7483 20.4473 44.0289 21.3596 44.1053 23.0392C44.1882 24.8556 44.2061 25.4003 44.2061 30.0004C44.2061 34.6 44.1882 35.1447 44.1053 36.9616C44.0289 38.6411 43.7483 39.553 43.5125 40.16C43.2361 40.9084 42.7961 41.585 42.2239 42.1407C41.6682 42.7129 40.9916 43.1533 40.2432 43.4293C39.6362 43.6655 38.7239 43.9461 37.0443 44.0226C35.2279 44.1054 34.6837 44.1228 30.0836 44.1228C25.4831 44.1228 24.9383 44.1054 23.1224 44.0226C21.4428 43.9461 20.5305 43.6655 19.9235 43.4293C18.4211 42.8498 17.2337 41.6624 16.6542 40.16C16.4184 39.553 16.1378 38.6411 16.0609 36.9616C15.9781 35.1447 15.9607 34.6 15.9607 30.0004C15.9607 25.4003 15.9781 24.8556 16.0609 23.0392C16.1374 21.3596 16.418 20.4473 16.6542 19.8403ZM30.0831 38.8457C34.9688 38.8457 38.9294 34.8856 38.9294 29.9999C38.9294 25.1142 34.9688 21.1541 30.0831 21.1541C25.1979 21.1541 21.2373 25.1142 21.2373 29.9999C21.2373 34.8856 25.1979 38.8457 30.0831 38.8457ZM20.8876 22.8716C22.0292 22.8716 22.9548 21.946 22.9548 20.8044C22.9548 19.6627 22.0292 18.7371 20.8876 18.7371C19.7459 18.7371 18.8203 19.6627 18.8203 20.8044C18.8208 21.946 19.7459 22.8716 20.8876 22.8716Z"/>
+    <path class="s-icon" d="M30.0833 0C46.6493 0 60.0833 13.434 60.0833 30C60.0833 46.566 46.6493 60 30.0833 60C13.5172 60 0.083252 46.566 0.083252 30C0.083252 13.434 13.5172 0 30.0833 0ZM12.9606 37.1022C13.0439 38.936 13.3355 40.188 13.7612 41.2839C14.6562 43.5979 16.4854 45.4271 18.7994 46.322C19.8948 46.7477 21.1472 47.0389 22.9806 47.1227C24.8176 47.2064 25.4044 47.2266 30.0828 47.2266C34.7616 47.2266 35.348 47.2064 37.1855 47.1227C39.0188 47.0389 40.2712 46.7477 41.3667 46.322C42.5166 45.8894 43.5575 45.2115 44.4181 44.3349C45.2943 43.4747 45.9722 42.4333 46.4048 41.2839C46.8305 40.1884 47.1221 38.936 47.2054 37.1027C47.2901 35.2652 47.3098 34.6783 47.3098 30C47.3098 25.3217 47.2901 24.7348 47.2059 22.8978C47.1226 21.064 46.8315 19.812 46.4057 18.7161C45.9731 17.5667 45.2947 16.5253 44.4181 15.6651C43.558 14.7885 42.5166 14.1106 41.3671 13.678C40.2712 13.2523 39.0193 12.9611 37.1855 12.8773C35.3484 12.7936 34.7616 12.7734 30.0833 12.7734C25.4049 12.7734 24.8181 12.7936 22.981 12.8778C21.1472 12.9611 19.8953 13.2523 18.7994 13.6775C17.6499 14.1101 16.6085 14.7885 15.7479 15.6651C14.8718 16.5257 14.1934 17.5667 13.7612 18.7161C13.3351 19.812 13.0439 21.064 12.9601 22.8978C12.8764 24.7348 12.8567 25.3217 12.8567 30C12.8567 34.6783 12.8764 35.2652 12.9606 37.1022Z" />
+  </symbol>
+
+  <symbol  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" id="vk">
+    <path class="s-icon" d="M30 0C13.432 0 0 13.431 0 30c0 16.569 13.432 30 30 30 16.568 0 30-13.431 30-30C60 13.431 46.568 0 30 0zm15.218 33.245c1.398 1.365 2.877 2.65 4.132 4.158.556.666 1.08 1.355 1.48 2.13.57 1.106.055 2.319-.935 2.384l-6.146-.001c-1.587.131-2.85-.509-3.915-1.594-.85-.865-1.639-1.789-2.458-2.683-.334-.367-.687-.713-1.106-.985-.838-.545-1.566-.378-2.046.497-.49.891-.601 1.878-.648 2.87-.067 1.449-.504 1.827-1.958 1.895-3.107.146-6.055-.325-8.795-1.892-2.418-1.382-4.288-3.332-5.919-5.54-3.174-4.304-5.606-9.027-7.79-13.887-.492-1.094-.132-1.68 1.075-1.703 2.006-.038 4.012-.033 6.018-.002.816.013 1.357.48 1.67 1.25 1.084 2.668 2.413 5.205 4.078 7.559.444.626.897 1.251 1.542 1.694.712.488 1.255.327 1.59-.468.215-.505.308-1.045.355-1.587.16-1.854.178-3.708-.098-5.555-.172-1.155-.822-1.902-1.974-2.12-.587-.111-.5-.329-.215-.664.495-.58.96-.938 1.887-.938l6.944-.001c1.094.215 1.34.706 1.488 1.808l.006 7.717c-.013.427.215 1.691.98 1.97.614.203 1.02-.29 1.386-.678 1.666-1.767 2.852-3.853 3.915-6.012.469-.951.873-1.937 1.266-2.924.292-.73.746-1.089 1.57-1.076l6.687.008c.197 0 .397.002.592.035 1.127.193 1.436.678 1.088 1.777-.55 1.727-1.615 3.166-2.658 4.609-1.117 1.544-2.308 3.034-3.414 4.585-1.017 1.418-.936 2.132.326 3.364z"/>
+  </symbol>
+  
+  <symbol  xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 512.005 512.005" id="search">
+    <path d="M508.885,493.784L353.109,338.008c32.341-35.925,52.224-83.285,52.224-135.339c0-111.744-90.923-202.667-202.667-202.667
+    S0,90.925,0,202.669s90.923,202.667,202.667,202.667c52.053,0,99.413-19.883,135.339-52.245l155.776,155.776
+    c2.091,2.091,4.821,3.136,7.552,3.136c2.731,0,5.461-1.045,7.552-3.115C513.045,504.707,513.045,497.965,508.885,493.784z
+     M202.667,384.003c-99.989,0-181.333-81.344-181.333-181.333S102.677,21.336,202.667,21.336S384,102.68,384,202.669
+    S302.656,384.003,202.667,384.003z"/>
+  </symbol>
+
+ <symbol xmlns="http://www.w3.org/2000/svg"  viewBox="0 -53 384 384"   id="burger_svg" >
+  <path d="m368 154.667969h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/>
+  <path d="m368 32h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/>
+  <path d="m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/>
+  </symbol>
+  
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 23" fill="none"  id="burger_svg-active">
+  <rect width="30" height="3" fill="#FF9900"/>
+  <rect x="5" y="10" width="25" height="3" fill="#FF9900"/>
+  <rect x="12" y="20" width="18" height="3" fill="#FF9900"/>
+  </symbol>
+
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 23" fill="none" id="js-close">
+  <rect x="2.09094" width="29.5699" height="2.95699" transform="rotate(45 2.09094 0)" fill="#FF9900"/>
+  <rect y="20.9091" width="29.5699" height="2.95699" transform="rotate(-45 0 20.9091)" fill="#FF9900"/>
+  </symbol>
+</svg>
+
+<script>
+
+  </script>
+</body>
+</html>
