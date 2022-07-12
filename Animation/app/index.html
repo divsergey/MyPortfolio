@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <link rel="preload" href="font/TTfirsNeue-400.woff2" as="font">
+    <link rel="preload" href="font/TTfirsNeue-700.woff2" as="font">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="js/gsap.js"></script>
+    <script src="js/gsap-burger.js"></script>
+</head>
+<body>
+    <div class="site">
+         <!-- menu -->
+        <div class="menu js__menu">
+            <div class="menu__header">
+                <div class="container">
+                    <button class="btn-reset button--close js__button--close"></button>
+                </div>
+            </div>
+            <div class="container menu__container">
+                <div class="menu__main">
+                    <nav>
+                        <ul class="list-reset main__list js__main__list">
+                            <li class="main-list__item">
+                                <a href="">О нас</a>
+                            </li>
+                            <li class="main-list__item">
+                                <a href="">Портфолио</a>
+                            </li>
+                            <li class="main-list__item">
+                                <a href="">Создание стратегии</a>
+                            </li>
+                            <li class="main-list__item">
+                                <a href="">Фотосъемка</a>
+                            </li>
+                            <li class="main-list__item">
+                                <a href="">Ретушь</a>
+                            </li>
+                            <li class="main-list__item">
+                                <a href="">Аренда студии</a>
+                            </li>
+                            <li class="main-list__item">
+                                <a href="">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <ul class="list-reset social-list js__social-list">
+                        <li class="social-list__item">
+                            <a href="" aria-label="vk" class="social-list__link vk"></a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="" aria-label="ig" class="social-list__link ig"></a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="" aria-label="fb" class="social-list__link fb"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu__extra js__menu__extra">
+                    <div class="sub-menu">
+                        <h3 class="sub-menu__heading">Кейсы</h3>
+                        <ul class="list-reset sub-menu__list">
+                            <li class="sub-menu-list__item">
+                                <a href="" class="sub-menu__link">Уста к устам</a>
+                            </li>
+                            <li class="sub-menu-list__item">
+                                <a href="" class="sub-menu__link">Zara</a>
+                            </li>
+                            <li class="sub-menu-list__item">
+                                <a href="" class="sub-menu__link">New Balance</a>
+                            </li>
+                            <li class="sub-menu-list__item">
+                                <a href="" class="sub-menu__link">Levi's</a>
+                            </li>
+                            <li class="sub-menu-list__item">
+                                <a href="" class="sub-menu__link">Rains</a>
+                            </li>
+                            <li class="sub-menu-list__item">
+                                <a href="" class="sub-menu__link">Abercrombie & Fitch</a>
+                            </li>
+                            <li class="sub-menu-list__item">
+                                <a href="" class="sub-menu__link">Massimo Dutti</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sub-menu">
+                        <h3 class="sub-menu__heading">Партнерам</h3>
+                        <ul class="list-reset sub-menu__list">
+                            <li class="sub-menu-list__item">
+                                <a href="" class="sub-menu__link">Условия партнёрства</a>
+                            </li>
+                            <li class="sub-menu-list__item">
+                                <a href="" class="sub-menu__link">Статистика</a>
+                            </li>
+                            <li class="sub-menu-list__item">
+                                <a href="" class="sub-menu__link">О нас</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- menu -->
+
+        <!--visible-->
+
+        <!-- header -->
+        <header class="header">
+            <div class="container header-container">
+                <button aria-label="открыть меню" class="btn-reset header__button js__header__button"></button>
+                <a href="" aria-label="logo" class="header__logo"></a>
+                <nav class="header__nav">
+                    <a href="" class="nav__link">Вход</a>
+                    <a href="" class="nav__link nav__service">Услуги</a>
+                </nav>
+            </div>
+        </header>
+        <!-- header -->
+        <main>
+            <section>
+                <div class="container hero-container">
+                  <div class="hero__main">
+                      <h2 class="hero__heading js__hero__heading">Создадим имидж вашему бренду</h2>
+                      <p class="hero__descr js__hero__descr">Все этапы создания контента.<br> От фотосессии до пре-пресса</p>
+                      <button class="hero__btn js__hero__btn">Ознакомиться</button>
+                  </div>  
+                  <div class="hero__portfolio">
+                      <strong class="portfolio__author js__portfolio__author">Автор фото:Сергей Журавлев. <a href="" class="portfolio__link">Портфолио автора</a></strong>
+                      <div class="portfolio_photos">
+                        <div class="photos_shape">
+                            <div class="photos_head">
+                                <img src="img/hero-12_21.png" alt="">
+                                <img src="img/social.png" alt="">
+                            </div>
+                            <div class="photos_wrap">
+                                <img src="img/hero-1.jpg" alt="" class="photos_wrap__img js__photo-one">
+                                <img src="img/hero-2.jpg" alt="" class="photos_wrap__img js__photo-two">
+                                <img src="img/hero-3.jpg" alt="" class="photos_wrap__img js__photo-three">
+                            </div>
+                        </div>
+                        <div class="photos_shape"></div>
+                        <div class="photos_shape"></div>
+                        <div class="photos_shape"></div>
+                        <div class="photos_shape"></div>
+                      </div>
+                  </div>  
+                </div>
+            </section>
+        </main>
+
+        <!--visible-->
+    </div>
+  
+</body>
+</html>
