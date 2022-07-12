@@ -1,0 +1,112 @@
+.section-reviews {
+    margin-top: 105px;
+    padding-left: 2px;
+    padding-bottom: 98px;
+}
+.reviews_heading {
+    font-size: 48px;
+    line-height: 1;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.reviews_container {
+    margin-top: 41px;
+}
+.reviews_list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.reviews_list_item {
+  margin: 0;
+  list-style: none;
+  border-top: 1px solid var(--color-grey);  
+}
+.reviews_button_in {
+    font-size: 24px;
+    line-height: var(--line-height-main);
+    font-weight: 700;
+    padding-top: 38px;
+    padding-bottom: 44px;
+    padding-left: 3px;
+    transition-property:color;
+    transition-duration: 0.1s;
+    transition-timing-function: linear;
+    margin-right: auto;
+}
+.line-1 {
+    padding-top: 41px;
+}
+.line-5 {
+    padding-top: 36px;
+}
+.accordion__button:hover,
+.accordion__button:focus {
+    color: #FF9900;
+}
+.accordion__button::after {
+    content: "";
+    display: inline-block;
+    width: 35.88px;
+    height: 35px;
+    padding: 25px;
+    margin-right: 3px;
+    background-image: url("../img/svg/review-cross.svg");
+    background-size: 31px;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-color:#ECECEC;
+    border-radius: 50%;
+    transition-property:background-color,transform;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+.accordion__button:hover::after,
+.accordion__button:focus::after {
+    background-color:#D2D2D2;
+}
+.color_grey {
+    color: var(--color-grey);
+}
+.acc-active {
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 400;
+}
+.active:after {
+    content:"";
+    background-color:#D2D2D2;
+    transform: rotate(45deg);
+}
+.accordion__button  {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    cursor: pointer;
+    background-color: inherit;
+}
+.ui-accordion .ui-accordion-header {
+    display: flex ;
+    justify-content: space-between ;
+}
+.ui-accordion .ui-accordion-header {
+    background:inherit;
+    border: none;
+    color: #333333;
+}
+.ui-icon, .ui-widget-content .ui-icon {
+    background-image: none !important;
+}
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+    font-family: "Montserrat";
+}
+.ui-widget-content {
+    border: none;
+}
+.ui-accordion-header-collapsed {
+    display: block;
+}
