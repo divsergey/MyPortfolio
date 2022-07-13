@@ -1,0 +1,16 @@
+.about {
+    font-size: 16px;
+    line-height: 32px;
+    padding-right: 230px;
+    margin-top: 53px;
+}
+.headline_about {
+    margin-bottom: 6px;
+}
+.about_text {
+    padding-left: 42px;
+    color:var(--color-grey);
+    margin: 0px;
+}
+
+
