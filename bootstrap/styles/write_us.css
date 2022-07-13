@@ -1,0 +1,57 @@
+.contacts_write_us {
+    display: inline-block;
+    max-width: 340px;
+    margin-top: 197px;
+    margin-left: 175px;
+    vertical-align: top;
+}
+.writeus_headline {
+    margin-bottom: 32px;
+    padding-left: 31px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+}
+.write_us_input {
+    margin-bottom: 23px;
+    padding:19px 0px 19px 20px;
+    border: none;
+    font-size: 16px;
+    line-height: 32px;
+    background-color: #ffffff;
+    border-radius: 15px;
+}
+.write_us_input:nth-child(3) {
+    margin-bottom:0px;
+}
+.write_us_input:nth-child(3n) {
+    padding-bottom: 38px ;
+    padding-top: 8px;
+}
+.write_btn {
+    margin-top: 22px;
+    margin-left:1px ;
+    padding: 33px 134px 34px 127px;
+    font-size: 16px;
+    line-height: 1px;
+    text-align: center;
+    border: 1px solid #cc9933;
+    border-radius: 15px;
+    color: #ffffff ;
+    background-color:#cc9933 ;
+    font-weight: bold;
+    transition-property:color,transform;
+    transition-duration: 0.2s;
+    transition-timing-function: cubic-bezier(0.1, 0.8, 0.5, 2), linear;
+}
+.write_btn:hover {
+    transform:scale(1.1);
+}
+.write_btn:focus {
+    transform:scale(1.1);
+}
+.write_btn:active {
+    color: #ffffff;
+    background-color:#0000FF;
+}
