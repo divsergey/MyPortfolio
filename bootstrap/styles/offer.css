@@ -1,0 +1,62 @@
+.section_offer {
+    max-width: 597px;
+    margin-left: 44px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 0;
+}
+.headline_offer {
+    padding-left: 43px;
+    margin-bottom: 19px;
+}
+.offer_content {
+    padding: 266px 65px 37px 40px;
+    border-radius: 15px;
+    background-image: url("../img/22.jpg");
+    background-repeat: no-repeat;
+}
+.offer_special {
+    font-size: 66px;
+    line-height: 58px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin: 0;
+}
+.offer_price_container {
+    display: flex;
+    margin-top: 31px;
+}
+.offer_price { 
+    margin: 0;
+    font-size:35px;
+    color:#a7a6a5 ;
+    padding-top: 2px;
+}
+.offer_button {
+    font-size: 16px;
+    padding: 6px 30px 5px 0px;
+    margin-left: 42px;
+    color: #ffcc66;
+}
+.offer_button::after {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 20px;
+    vertical-align: middle;
+    background-image:url("../img/arroworange.svg") ;
+    background-repeat: no-repeat;
+    background-position: right 70% center ;
+    transition-property:transform;
+    transition-duration: 0.2s;
+    transition-timing-function: cubic-bezier(0.1, 0.8, 0.5, 2), linear;
+}
+.offer_button:hover::after {
+    transform: translateX(20px);
+}
+.offer_button:focus::after {
+    transform: translateX(20px);
+}
+.offer_button:active {
+    background-color: #0007E7;
+}
