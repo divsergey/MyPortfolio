@@ -1,0 +1,46 @@
+body {
+    box-sizing: border-box; /* cвойства width и height задаются размером блока , а не контента , как по умолчанию */
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit; /*  аналогично позиционируются дочерние блоки */
+}
+
+body { /* основные свойства , которые задаются глобально для всего сайта */
+    min-width: 1170px ;
+    margin: 0;
+    padding: 0;
+    background-color:#f1f1f1 ;
+    font-family: "Muller","Arial" , sans-serif ;
+    font-size: 16px;
+    line-height: 32px;
+    color:#333333 ;
+    padding-bottom: 50px;
+}
+img { /*  величина картинки по умолчанию */
+    max-width: 100%;
+}
+a { 
+    text-decoration: none;
+}
+.visually-hidden { /* для скрытого контента , который вероятно нужно будет визуализировать */
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px 1px 1px 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+:root {
+    --font-size-main:16px;
+    --color-orange:#cc9933;
+    --color-grey:#727272;
+    --color-blue:#0000FF;
+}
+
+* :focus {
+    outline: 1px solid #0000FF;
+}
