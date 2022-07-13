@@ -1,0 +1,146 @@
+.footer {
+    margin-top: 22px;
+}
+.container_footer {
+    background-color: #333333;
+    background-image: url("../img/footsun.png");
+    background-position: right 19% bottom;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    padding: 41px 25px ;
+    border-radius: 13px;
+}
+/* footer_main */
+.footer_main {
+    color: #FFFFFF;
+}
+.footer_text {
+    margin: 0;
+    font-style: normal;
+    color: #FFFFFF;
+}
+.footer_information {
+    margin:32px 0px;
+    color: #FFFFFF;
+}
+.footer_politic {
+    color: var(--color-orange);
+    transition-property: color;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+.footer_politic:hover {
+    color:#1E90FF;
+} 
+.footer_politic:focus {
+    color:#1E90FF;
+} 
+.footer_politic:focus {
+    outline: 1px solid #1E90FF;
+} 
+.footer_politic:active {
+    color: #ffffff;
+    background-color:#0000FF ;
+}
+/* footer_contacts */
+.footer_contacts {
+    max-width: 360px;
+    margin-left: 80px;
+    padding-right: 0;
+    padding-left: 0;
+}
+.footer_adress {
+    margin: 0;
+    font-style: normal;
+}
+.footer_adress_street {
+    margin: 0;
+}
+.footer_contacts_in {
+    max-width: 160px;
+}
+.footer_number {
+    line-height: 1.5;
+    margin-top: 28px;
+}
+.footer_mail {
+    line-height: 1.5;
+    margin-top: 25px;
+}
+.footer_tel-mail {
+    color: var(--color-orange);
+    transition-property: color;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}  
+.footer_tel-mail:hover {
+    color:#1E90FF;
+}
+.footer_tel-mail:focus {
+    color:#1E90FF;
+}
+.footer_tel-mail:focus {
+    outline: 1px solid #1E90FF;
+}
+.footer_tel-mail:active {
+    color: #ffffff;
+    background-color:#0000FF;
+ }
+/* footer_social */
+.footer_social {
+    max-width: 80px;
+    margin-left: 200px;
+    padding-top: 8px;
+}
+.footer_social_list {
+    margin: 0;
+    padding: 0;
+ }
+.footer_social_item {
+    list-style: none;
+    margin-bottom: 25px;
+}
+.footer_social_item:last-child {
+    margin-bottom: 0px;
+ }
+ .social_icon {
+    display: block;
+    width:25px;
+    height: 25px;
+    opacity: 50%;
+    background-size: contain; 
+    background-repeat: no-repeat;
+    transition-property:transform;
+    transition-duration: 0.2s;
+    transition-timing-function: cubic-bezier(0.1, 0.8, 0.5, 2), linear;
+}
+.social_icon:hover {
+    transform:scale(1.2);
+}
+.social_icon:focus {
+    transform:scale(1.2);
+    outline: 2px solid #1E90FF;
+}
+.social_icon:active {
+    opacity: 10%;
+}
+.tripadvisor {
+    background-image:url("../img/tripadvisorlogo.svg");
+}
+.twitter {
+    background-image: url("../img/twitterlogo.svg");
+}
+.facebook {
+    background-image: url("../img/facebooklogo.svg");
+}
+.vk {
+    background-image: url("../img/vklogo.svg");
+}
+.google {
+    background-image: url("../img/googlelogo.svg");
+}
+
+
+
+
+
