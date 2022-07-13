@@ -1,0 +1,77 @@
+.services {
+    margin-top: 52px;
+}
+.service_headline {
+    margin-bottom: 18px;
+}
+.service_exclusive {
+    background-image: url("../img/10.jpg");
+}
+.service_rent {
+    background-image: url("../img/15.jpg");
+}
+.service_facilities {
+    background-image: url("../img/12.jpg");
+}
+.service_parking {
+    background-image: url("../img/carlo-d-agnolo-aFxSh_l4fbY-unsplash.jpg");
+}
+.service {
+    max-width: 530px;
+    padding: 194px 30px 30px 45px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.service:nth-child(2n) {
+    margin-left: 15px;
+}
+.service:nth-child(-n+2) {
+    margin-bottom: 15px;
+}
+.service_type {
+    font-size: 22px;
+    line-height: 35px;  
+    padding-right: 25px;
+    font-weight: 400;
+    color:var(--color-orange);
+    transition-property:transform;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+.service_type::after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 20px;
+    margin-left: 6px;
+    vertical-align: middle;
+    background-image:url("../img/servicepoint.svg") ;
+    background-repeat: no-repeat;
+    background-position: right  center ;
+    transition-property: transform;
+    transition-duration: 0.2s;
+    transition-timing-function: cubic-bezier(0.1, 0.8, 0.5, 2), linear;
+}
+.service_type:hover::after {
+    transform: translateX(20px);
+}
+.service_type:focus::after {
+    transform: translateX(20px);
+}
+.service_type:active {
+    background-color:#0000FF;
+}
+.service_text {
+    padding-right: 40px;
+    line-height: 32px;
+    color: #333333 ;
+    margin: 0;
+}
+.service_list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ 
