@@ -1,0 +1,95 @@
+.contacts {
+    margin-top: 62px;
+    display: inline-block;
+}
+.headline_contacts {
+    margin-bottom: 18px;
+}
+.contacts_container {
+    max-width: 470px;
+    background-color: #FFFFFF;
+    padding:21px 44px 44px 42px;
+    border-radius: 15px;
+}
+.table {
+    border-collapse: collapse;
+    padding: 0px;
+}
+.column_sign {
+    font-size: 22px;
+    font-weight: bold;
+    color: #727272;
+    vertical-align: top;
+    padding-top: 21px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #cccccc;
+} 
+.column_description {
+    font-size: 16px;
+    line-height: 1.5;
+    padding-left: 37px;
+    padding-top: 26px;
+    padding-bottom: 23px;
+    border-bottom: 1px solid #cccccc;
+} 
+.column_description_tel {
+    padding-right: 80px ;
+    padding-bottom: 23px;
+}
+.column_description_schedule {
+    padding-top: 26px;
+    padding-bottom: 23px;
+    padding-right: 50px;
+}
+.colomn_description_link {
+    color:var(--color-orange);
+    transition-property: color;
+    transition-duration: 0.2s;
+    transition-timing-function: cubic-bezier(0.1, 0.8, 0.5, 2), linear;
+}
+.colomn_description_link:hover {
+    color: #0000FF;
+}
+.colomn_description_link:focus {
+    color: #0000FF;
+}
+.colomn_description_link:active {
+    color: #ffffff;
+    background-color:#0000FF;
+}
+.contacts_btn {
+    margin-left:-1px;
+    font-size: 16px;
+    line-height: 1px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #cc9933;
+    border-radius: 15px;
+    padding: 34px 31px 33px 29px;
+    color: #cc9933;
+    background-color: inherit;
+    transition-property:transform;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+.contacts_btn:hover {
+    transform:scale(1.1);
+}
+.contacts_btn:focus {
+    transform:scale(1.1);
+}
+.contacts_btn:active {
+    color: #ffffff;
+    background-color:#0000FF;
+}
+.container_button {
+    padding-left:2px;
+    margin-top: 44px;
+}
+.colomn_description_mail {
+    color: var(--color-grey);
+    margin: 0;
+}
+.column_description_container {
+    padding-bottom: 23px;
+}
